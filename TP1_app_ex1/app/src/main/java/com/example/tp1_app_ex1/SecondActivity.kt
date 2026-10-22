@@ -12,8 +12,10 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.secondactivity)
 
         val nom = intent.getStringExtra("nom_utilisateur")
+        val age = intent.getIntExtra("age_utilisateur",0)
 
         val textNom = findViewById<TextView>(R.id.bienvenue)
-        textNom.text = "Bienvenue!!!\n $nom"
+        textNom.text = "Bienvenue!!!\n $nom \n votre age est \n $age"
+
     }
 }

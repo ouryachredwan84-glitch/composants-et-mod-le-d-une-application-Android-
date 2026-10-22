@@ -13,13 +13,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val edittextnom = findViewById<EditText>(R.id.editnom)
+        val editetextage = findViewById<EditText>(R.id.editage)
         val bouton = findViewById<Button>(R.id.valider)
 
         bouton.setOnClickListener {
             val nom = edittextnom.text.toString() // .text pour récupérer le texte saisi par l'utilisateur
-
+            val age = editetextage.text.toString().toInt()
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("nom_utilisateur", nom)
+            val bundle = Bundle() //bundel katjma3 lina bzf dyl data  okansiftoha f intent wahed
+
+            bundle.putString("nom_utilisateur", nom)
+            bundle.putInt("age_utilisateur", age)
+
+            intent.putExtras(bundle)
 
             startActivity(intent)
 

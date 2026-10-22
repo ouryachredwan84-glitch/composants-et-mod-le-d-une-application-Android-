@@ -21,6 +21,15 @@
             android:layout_height="wrap_content"
             android:hint="saisie votre nom"
             android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editage"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="votre age"
+            android:gravity="center"/>
+
         <Button
             android:id="@+id/valider"
             android:layout_width="match_parent"
