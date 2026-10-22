@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             val nom = edittextnom.text.toString() // .text pour récupérer le texte saisi par l'utilisateur
             val age = editetextage.text.toString().toInt()
             val intent = Intent(this, SecondActivity::class.java)
-            val bundle = Bundle() //bundel katjma3 lina bzf dyl data  okansiftoha f intent wahed
+            val bundle = Bundle() //bundel katjma3 lina bzf dyl les valeurs  okansiftoha f intent wahed
 
             bundle.putString("nom_utilisateur", nom)
             bundle.putInt("age_utilisateur", age)
